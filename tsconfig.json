@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": [
+      "ESNext",
+    ],
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "outDir": "lib",
+    "declarationDir": "lib",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "__tests__"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

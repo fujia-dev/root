@@ -1,0 +1,71 @@
+{
+  "name": "@fujia/root",
+  "version": "1.0.0",
+  "description": "Try to operate the permissions of root.",
+  "scripts": {
+    "docs": "sh scripts/docs-publish.sh",
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "report-coverage": "cat ./coverage/lcov.info | coveralls",
+    "prepare": "husky install",
+    "prerelease": "npm run build",
+    "release": "sh scripts/release.sh"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujia-dev/root.git"
+  },
+  "main": "lib/index.js",
+  "module": "lib/@fujia/index.esm.js",
+  "esnext": "lib/@fujia/index.esnext.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "root",
+    "node.js",
+    "javascript"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": {
+    "name": "fujia",
+    "url": "https://github.com/fushenguang",
+    "email": "fujia.site@outlook.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fujia-dev/root/issues"
+  },
+  "homepage": "https://github.com/fujia-dev/root#readme",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^15.0.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.11",
+    "commitlint": "^15.0.0",
+    "coveralls": "^3.1.1",
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "jest-config": "^27.4.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.60.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "ts-jest": "^27.0.7",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "sudo-block": "^4.0.0"
+  }
+}
