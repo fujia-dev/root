@@ -2,7 +2,7 @@
 import commonjs from '@rollup/plugin-commonjs';
 import ts from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
-import json from ' @rollup/plugin-json';
+import json from '@rollup/plugin-json';
 
 import pkg from './package.json';
 
