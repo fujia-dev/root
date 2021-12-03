@@ -67,6 +67,6 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
-    "sudo-block": "^4.0.0"
+    "chalk": "^5.0.0"
   }
 }
