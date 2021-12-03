@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-npm run docs
+typedoc
 
 git add -A
 git commit -m "docs: publish docs"
