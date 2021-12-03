@@ -19,5 +19,5 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
   # upgrade version
   git add -A
   git commit --allow-empty -m "build: build $VERSION"
-  git push origin main
+  git push origin main --tags
 fi
