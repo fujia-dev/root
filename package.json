@@ -1,6 +1,6 @@
 {
   "name": "@fujia/root",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Try to operate the permissions of root.",
   "scripts": {
     "docs": "sh scripts/docs-publish.sh",
